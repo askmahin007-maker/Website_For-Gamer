@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A website for game lovers by Mahin Ahmed.">
+    <title>Mahin's Game Zone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <header class="navbar">
+        <a href="#home" class="brand">
+            <svg class="brand-logo" width="32" height="32" viewBox="0 0 64 64" role="img" aria-labelledby="logoTitle" xmlns="http://www.w3.org/2000/svg">
+                <title id="logoTitle">Game Zone logo</title>
+                <path d="M18 19h28c8 0 13 6 15 18l1 7c1 6-6 10-11 6L41 40H23L13 50c-5 4-12 0-11-6l1-7c2-12 7-18 15-18Z" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/>
+                <path d="M18 27v12m-6-6h12" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="45" cy="30" r="3" fill="currentColor"/><circle cx="52" cy="36" r="3" fill="currentColor"/>
+            </svg>
+            Game Zone
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#vote">Vote</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        
+        <section id="home" class="hero">
+            <p class="tag">Level Up Your Day</p>
+            <h1>Welcome To <span>Mahin's Game Zone</span></h1>
+            <p class="hero-text">A place made for game lovers. Explore my favorite games, hobbies, and share your opinion about this website.</p>
+            <div class="hero-buttons">
+                <a href="#games" class="btn btn-primary">Explore Games</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </section>
+
+        
+        <section id="about" class="section">
+            <h2 class="section-title">About Me</h2>
+            <div class="grid-2">
+                <article class="card">
+                    <h3><i class="fa-solid fa-heart"></i> My Hobbies</h3>
+                    <p>In my free time, I enjoy reading books, gaming, and traveling. I also have a deep passion for reminiscing and reliving my past memories.</p>
+                </article>
+
+                <article class="card">
+                    <h3><i class="fa-solid fa-user"></i> About Developer</h3>
+                    <table>
+                        <tr><th>Name</th><td>Mahin Ahmed</td></tr>
+                        <tr><th>Home</th><td>Brahmanbaria</td></tr>
+                        <tr><th>Nationality</th><td>Bangladeshi</td></tr>
+                    </table>
+                </article>
+            </div>
+        </section>
+
+        
+        <section id="games" class="section">
+            <h2 class="section-title">Games I Like</h2>
+            <div class="game-grid">
+                <div class="game-card g1">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h3>Clash of Clans</h3>
+                    <p>Build, defend and attack</p>
+                </div>
+                <div class="game-card g2">
+                    <i class="fa-solid fa-user-astronaut"></i>
+                    <h3>Among Us</h3>
+                    <p>Find the impostor</p>
+                </div>
+                <div class="game-card g3">
+                    <i class="fa-solid fa-wand-sparkles"></i>
+                    <h3>Genshin Impact</h3>
+                    <p>Explore a magical world</p>
+                </div>
+                <div class="game-card g4">
+                    <i class="fa-solid fa-skull"></i>
+                    <h3>Zombie Catcher</h3>
+                    <p>Hunt the undead</p>
+                </div>
+            </div>
+
+            <div class="card showcase">
+                <h3><i class="fa-solid fa-trophy"></i> Favorite Game</h3>
+                <video controls autoplay loop preload="metadata" playsinline style="display:block;width:100%;max-width:800px;border-radius:12px;">
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support HTML video. Add a gameplay.mp4 file next to this page.
+                </video>
+                <h3><i class="fa-solid fa-volume-high"></i> Game Sound</h3>
+                <audio controls autoplay loop preload="metadata" style="width:100%;max-width:800px;">
+                    <source src="sound.mp3" type="audio/mpeg" >
+                    Your browser does not support HTML audio. Add a game-sound.mp3 file next to this page.
+                </audio>
+            </div>
+        </section>
+
+        
+        <section id="vote" class="section">
+            <h2 class="section-title">Rate This Website</h2>
+            <form id="voteForm" class="card vote-form">
+                <p>Do you like this website?</p>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="website_vote" value="like" required>
+                        <span><i class="fa-solid fa-thumbs-up"></i> I like it</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="website_vote" value="dislike">
+                        <span><i class="fa-solid fa-thumbs-down"></i> I dislike it</span>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Vote</button>
+                <p id="voteMsg" class="vote-msg" role="status"></p>
+            </form>
+        </section>
+
+    </main>
+
+    
+    <footer id="contact" class="footer">
+        <h2 class="section-title">Contact</h2>
+        <ul class="contact-list">
+            <li><i class="fa-solid fa-square-phone"></i> <a href="tel:+8801816314494">01816314494</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:askmahin007@gmail.com">askmahin007@gmail.com</a></li>
+            <li><i class="fa-brands fa-facebook"></i> <a href="#" target="_blank" rel="noopener">Askmahin (Eyasin Ahmed)</a></li>
+        </ul>
+        <p class="copy">&copy; 2026 Mahin Ahmed. All rights reserved.</p>
+    </footer>
+
+    <script>
+        
+        const form = document.getElementById("voteForm");
+        const msg = document.getElementById("voteMsg");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const vote = form.website_vote.value;
+            msg.textContent = vote === "like"
+                ? "Thanks for your feedback! Glad you like it."
+                : "Thanks for your feedback! I will try to improve.";
+            form.reset();
+        });
+    </script>
+</body>
+</html>
